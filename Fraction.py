@@ -33,7 +33,7 @@ class Fraction:
     def ParseRatio(self,num,don):
         fmt1 = self.__format(don)
         fmt2 = self.__format(num)
-        arr = self.__gcd(fmt1[0]*fmt2[1] , fmt1[1]*fmt2[0])
+        arr = self.__gcd(fmt1[1]*fmt2[0] , fmt1[0]*fmt2[1])
         fra = self.__fraction(arr)
         return fra
 
